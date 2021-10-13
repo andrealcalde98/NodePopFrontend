@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: #ECEFF1;
+}
+
+img {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    background-color: greenyellow;
+    padding: 2rem;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.carta {
+    position: relative;
+    border: black solid 4px;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+    background: white;
+    text-align: left;
+}
+
+.carta>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilo para el error */
+
+.error {
+    color: white;
+    background-color: red;
+    padding: 20px;
+    border: 2px solid red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(-50%, 0%);
+}
+
+.success {
+    color: green;
+    padding: 20px;
+    border: 2px solid green;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+/* Estilo para el detalle */
+
+.ad {
+    margin: 0 auto;
+    border: 2px solid greenyellow;
+    margin-top: 1em;
+    height: 350px;
+    background-color: white;
+    width: 80%;
+}
+
+.detailPhoto {
+    float: left;
+    text-align: center;
+    display: inline;
+    padding-left: 3em;
+}
+
+.detailInfo {
+    float: left;
+    text-align: left;
+    padding-left: 5em;
+    display: inline;
+}
+
+/* Estilo newAd */
+
+form {
+    text-align: center;
+}
+
+form>select {
+    margin-bottom: 1em;
+}

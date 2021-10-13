@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1 class="title">NodePop</h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodePop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div class="messages"></div>
+    <div class="newAd"></div>
+    <form novalidate>
+        <h1 class=".title">Nuevo Anuncio</h1>
+        <p>Escribe tu anuncio: <input type="text" name="nombre" required autofocus></p>
+        <p>Añade el precio: <input type="text" name="precio" required autofocus></p>
+        <select name="estado">
+            <option>Venta</option>
+            <option>Compra</option>
+        </select><br>
+        <button type="submit">Crear</button>
+    </form>
+    <script type="module" src="js/newAd.js"></script>
+</body>
+
+</html>
