@@ -26,7 +26,6 @@ export default class AdListController {
             PubSub.publish(PubSub.events.SHOW_ERROR, error)
         } finally {
             PubSub.publish(PubSub.events.HIDE_LOADING)
-
         }
     }
 

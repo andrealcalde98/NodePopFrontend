@@ -5,9 +5,13 @@ import DataService from "./services/DataService.js"
 
 window.addEventListener('DOMContentLoaded', function () {
 
-    // if (DataService.isAuthenticed() === false) {
-    //     window.location.href = '/login.html?next=/new.html'
-    // }
+    if (DataService.isAuthenticed() === false) {
+        window.location.href = '/login.html?next=/newAd.html'
+    }
+
+    // Seleccionamos el elemento del DOM donde mostrar mensajes de error y lo tratamos
+    const messages = document.querySelector('.messages')
+    new MessageController(messages)
 
     // Cargamos el loader en la pagina
     const loaderDiv = document.querySelector('.loader')
@@ -15,10 +19,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // Seleccionamos el formulario y se lo pasamos al controlador del formulario
     const form = document.querySelector('form')
-    new AdFormController(form)
+    const adFormController = new AdFormController(form)
 
-    // Seleccionamos el elemento del DOM donde mostrar mensajes de error y lo tratamos
-    const messages = document.querySelector('.messages')
-    new MessageController(messages)
 
 })

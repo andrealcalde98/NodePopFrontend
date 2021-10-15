@@ -1,5 +1,5 @@
 import PubSub from "../services/PubSub.js"
-import { errorView, successView } from "../views.js"
+import { errorView, successView, successViewSignup } from "../views.js"
 
 export default class MessageController {
 
@@ -14,6 +14,10 @@ export default class MessageController {
         PubSub.subscribe(PubSub.events.SHOW_SUCCESS, message => {
             this.showSuccess(message)
         })
+
+        PubSub.subscribe(PubSub.events.SHOW_SUCCESS_SIGNUP, message => {
+            this.showSuccessSignup(message)
+        })
     }
 
     attachCloseMessageEventListener() {
@@ -25,6 +29,10 @@ export default class MessageController {
 
     showSuccess(message) {
         this.element.innerHTML = successView(message)
+        this.attachCloseMessageEventListener()
+    }
+    showSuccessSignup(message) {
+        this.element.innerHTML = successViewSignup(message)
         this.attachCloseMessageEventListener()
     }
 

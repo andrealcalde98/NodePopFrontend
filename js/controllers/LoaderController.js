@@ -5,7 +5,7 @@ export default class LoaderController {
 
     constructor(element) {
         this.element = element
-        this.element.innerHTML = loaderView()
+
         PubSub.subscribe(PubSub.events.SHOW_LOADING, () => {
             this.showLoader()
         })
@@ -19,7 +19,9 @@ export default class LoaderController {
     }
 
     showLoader() {
+        this.element.innerHTML = loaderView()
         this.element.style.display = 'initial'
     }
+
 
 }

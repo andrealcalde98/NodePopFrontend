@@ -5,6 +5,7 @@ export default {
 
   events: {
     SHOW_SUCCESS: 'SHOW_SUCCESS',
+    SHOW_SUCCESS_SIGNUP: 'SHOW_SUCCESS_SIGNUP',
     SHOW_ERROR: 'SHOW_ERROR',
     SHOW_LOADING: 'SHOW_LOADING',
     HIDE_LOADING: 'HIDE_LOADING'
@@ -39,13 +40,13 @@ export default {
 
 
 /*
-  { 
+  {
     suscripciones: {
       SHOW_ERROR: [function(eventInfo) {
             console.error('Error desde PubSub', eventInfo)
         }]
     },
-    
+
     subscribe: function(nombreEvento, callbackAEjecutarCuandoOcurraElEvento) {
       this.suscripciones[nombreEvento].push(callbackAEjecutarCuandoOcurraElEvento)
     },
@@ -55,6 +56,6 @@ export default {
         callback(infoEvento)
       }
     }
-  
+
 }
 */
