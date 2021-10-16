@@ -31,7 +31,7 @@ export default class AdDetailController {
                 const answer = confirm('¿Seguro que quieres borrar el anuncio?')
                 if (answer === true) {
                     PubSub.publish(PubSub.events.SHOW_LOADING)
-                    // desactivamos el boton ya que si tarda la operación el usuario le dará al botón (repedida) más veces
+                    // desactivamos el boton ya que si tarda la operación el usuario le dará al botón repedidas veces
                     button.setAttribute('disabled', 'disabled')
                     try {
                         await DataService.deleteAd(tweet.id)

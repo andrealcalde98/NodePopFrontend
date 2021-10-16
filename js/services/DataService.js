@@ -1,9 +1,9 @@
 export default {
 
     parseAd: function (ad) {
-        ad.nombre = ad.nombre
-        ad.precio = ad.precio
-        ad.estado = ad.estado
+        ad.nombre = ad.nombre.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        ad.precio = ad.precio // es de tipo numero
+        ad.estado = ad.estado // es un selector
         ad.foto = ad.foto
         ad.author = ad.user.username
         ad.canBeDeleted = ad.userId === this.getAuthUserId()

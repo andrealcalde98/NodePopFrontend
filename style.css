@@ -7,16 +7,33 @@ body {
     background: #ECEFF1;
 }
 
-/* Titulo */
+/* Nav */
 
-.title {
+.nav {
     background-color: greenyellow;
     padding: 2rem;
     width: 100%;
 }
 
+.navIndex {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 7rem;
+    background-color: greenyellow;
+    padding: 2rem;
+}
+
 .linkIndex {
     color: black;
+}
+
+#login {
+    margin-top: 10px;
+}
+
+.loginImg {
+    width: 40px;
 }
 
 /* Index */

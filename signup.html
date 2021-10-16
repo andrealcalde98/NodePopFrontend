@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <h1 class="title">NodePop</h1>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +10,31 @@
     <link rel="stylesheet" href="styleLoader.css">
 </head>
 
-<body class="forms">
-    <div class="messages"></div>
-    <div class="loader"></div>
-    <h1>Crea tu cuenta en Nodepop</h1>
-    <form novalidate>
-        <div>
-            <input type="text" name="username" placeholder="Escribe aquí tu usuario" required autofocus>
-        </div><br>
-        <div>
-            <input type="password" name="password" placeholder="Escribe aquí tu contraseña" required>
-        </div><br>
-        <div>
-            <input type="password" name="passwordConfirmation" placeholder="Confirma tu contraseña" required>
-        </div><br>
-        <div>
-            <button type="submit" disabled>Regístrate</button>
-        </div>
-    </form>
+<body>
+    <nav class="nav">
+        <a class="linkIndex" href="/index.html">
+            <h1 class="title">NodePop</h1>
+        </a>
+    </nav>
+    <div class="forms">
+        <div class="messages"></div>
+        <div class="loader"></div>
+        <h1>Crea tu cuenta en Nodepop</h1>
+        <form novalidate>
+            <div>
+                <input type="text" name="username" placeholder="Escribe aquí tu usuario" required autofocus>
+            </div><br>
+            <div>
+                <input type="password" name="password" placeholder="Escribe aquí tu contraseña" required>
+            </div><br>
+            <div>
+                <input type="password" name="passwordConfirmation" placeholder="Confirma tu contraseña" required>
+            </div><br>
+            <div>
+                <button type="submit" disabled>Regístrate</button>
+            </div>
+        </form>
+    </div>
     <script type="module" src="js/signup.js"></script>
 </body>
 

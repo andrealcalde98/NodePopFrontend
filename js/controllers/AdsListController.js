@@ -5,7 +5,7 @@ import PubSub from "../services/PubSub.js"
 
 export default class AdListController {
 
-    constructor(element,) {
+    constructor(element) {
 
         this.element = element
     }
@@ -16,7 +16,6 @@ export default class AdListController {
         try {
             const ads = await DataService.getads()
             for (const ad of ads) {
-                console.log(ads)
                 const adElement = document.createElement('div')
                 adElement.className = 'carta'
                 adElement.innerHTML = adView(ad)

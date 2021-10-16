@@ -1,6 +1,6 @@
 export function adView(ad) {
     return `<a href="/detail.html?id=${ad.id}">
-    <dt> <img class="imagenDetalle" src="${ad.foto}" alt="no picture"></img> </dt>
+    <dt> <img class="imagenDetalle" src="${ad.foto}" alt="picture"></img> </dt>
      <dt>
         <b>
            <p>${ad.nombre}</p>
@@ -45,7 +45,7 @@ export function adDetailView(ad) {
         button = '<button class="delete">Borrar</button>'
     }
     return `
-        <div class="detailPhoto"> <img src="${ad.foto}" alt="no picture"></img> </div>
+        <div class="detailPhoto"> <img src="${ad.foto}" alt="detail picture"></img> </div>
         <div class="detailInfo">
         <p style="font-size:2em">${ad.precio}€</p><br><hr>
             <p style="font-size:1.5em">${ad.nombre}</p>

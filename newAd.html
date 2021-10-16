@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <a class="linkIndex" href="/index.html">
-        <h1 class="title">NodePop</h1>
-    </a>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +10,27 @@
     <link rel="stylesheet" href="styleLoader.css">
 </head>
 
-<body class="forms">
-    <div class="loader"></div>
-    <div class="messages"></div>
-    <div class="newAd"></div>
-    <form novalidate>
-        <h1 class=".title">Nuevo Anuncio</h1>
-        <p>Escribe tu anuncio: <input type="text" name="nombre" required autofocus></p>
-        <p>Añade el precio: <input type="number" name="precio" required autofocus></p>
-        <select name="estado">
-            <option>Venta</option>
-            <option>Compra</option>
-        </select><br>
-        <button type="submit">Crear</button>
-    </form>
+<body>
+    <nav>
+        <a class="linkIndex" href="/index.html">
+            <h1 class="title">NodePop</h1>
+        </a>
+    </nav>
+    <div class="forms">
+        <div class="loader"></div>
+        <div class="messages"></div>
+        <div class="newAd"></div>
+        <form novalidate>
+            <h1 class=".title">Nuevo Anuncio</h1>
+            <p>Escribe tu anuncio: <input type="text" name="nombre" required autofocus></p>
+            <p>Añade el precio: <input type="number" name="precio" required autofocus></p>
+            <select name="estado">
+                <option>Venta</option>
+                <option>Compra</option>
+            </select><br>
+            <button type="submit">Crear</button>
+        </form>
+    </div>
     <script type="module" src="js/newAd.js"></script>
 </body>
 
