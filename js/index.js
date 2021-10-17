@@ -7,9 +7,10 @@ import DataService from "./services/DataService.js"
 window.addEventListener('DOMContentLoaded', function () {
 
     // Si no estamos autenticados mostara un boton para iniciar sesión en "nav" 
-    const login = document.querySelector('.login')
-    if (DataService.isAuthenticed === true) {
-        login.style.display = 'disabled'
+    const login = document.querySelector('#login')
+
+    if (DataService.isAuthenticed() === true) {
+        login.style.display = 'none'
     }
 
 
