@@ -1,0 +1,81 @@
+{
+
+  "users": [
+
+    {
+
+      "username": "admin",
+
+      "password": "$2b$10$bWa8ld1Z3L992U0Rcu5WCuA9v49Sl/3rq91FY.K63HeoSNvvIf5ci",
+
+      "id": 1
+
+    },
+
+    {
+
+      "username": "prova",
+
+      "password": "$2b$10$bWa8ld1Z3L992U0Rcu5WCudMDfyH9uFtejuOxHmoZf7QO1NQ.V3gG",
+
+      "id": 2
+
+    }
+
+  ],
+
+  "anuncios": [
+
+    {
+
+      "id": 1,
+
+      "nombre": "Bicicleta",
+
+      "precio": "70",
+
+      "estado": "venta",
+
+      "userId": 1,
+
+      "foto": "/img/bici.png"
+
+    },
+
+    {
+
+      "id": 2,
+
+      "nombre": "Coche",
+
+      "precio": "2000",
+
+      "estado": "venta",
+
+      "userId": 1,
+
+      "foto": "/img/coche.png"
+
+    },
+
+    {
+
+      "nombre": "iPhone 12",
+
+      "estado": "venta",
+
+      "precio": "500",
+
+      "foto": "/img/iPhone.png",
+
+      "userId": 1,
+
+      "updatedAt": "2021-10-14T20:48:08.484Z",
+
+      "id": 28
+
+    }
+
+  ]
+
+}
